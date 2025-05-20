@@ -33,7 +33,7 @@ export interface BatchData {
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://stgproductauth.karmaalab.com';
 
 // Auth token - in a real app, this should come from a secure authentication flow
-const AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ4MDc4Mjk2LCJpYXQiOjE3NDc0NzM0OTYsImp0aSI6IjFhOGNiNmVhZGVjMTQ0Yjc5ZGY1YjRkYmU2YTgyZTFlIiwidXNlcl9pZCI6Mn0.JOZiRWkwTWKYRISI0qlkLfwRra6BrANQ2OO6SDLNX-k';
+const AUTH_TOKEN = import.meta.env.VITE_API_TOKEN || '';
 
 export const batchService = {
   getAll: async (): Promise<BatchData[]> => {
