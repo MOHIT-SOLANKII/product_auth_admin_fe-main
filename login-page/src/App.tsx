@@ -4,7 +4,7 @@ import Dashboard from './dashboard'
 
 export default function App() {
   return (
-    <div className='w-full mx-auto'>
+    <div className='w-full h-full'>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
